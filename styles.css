@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+::before, *, ::after {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+:root {
+    --clr-background: hsl(165, 19%, 41%); 
+    --clr-text: hsl(124, 71%, 96%);
+    --clr-accent: #a1f7c5;
+}
+
+h1, h2 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.teaser {
+    font-size: 1rem;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: var(--clr-text);
+    background-color: var(--clr-background);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    header {
+        height: auto;
+    }
+    
+    main {
+        height: 1fr;
+    }
+    
+    footer {
+        height: auto;
+    }
+    
+}
+
+
+.header {
+    margin: auto;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    margin: 1rem; 
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+#questionmark {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 1rem;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background-color: var(--clr-accent);
+    color: var(--clr-background);
+    font-size: 2rem;
+    margin: .5rem;
+    padding: auto;
+}
+
+.game {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    gap: .5rem;
+}
+
+.guess-box {
+    padding: .5rem;
+    height: 2.5rem;
+    width: 25%;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: 1px;
+}
+
+.btn {
+    background-color: var(--clr-accent);
+    color: var(--clr-background);
+    font-family: "Libre Baskerville", serif;
+    font-weight: 800;
+    height: 2.5rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    border: none;
+    font-size: 1rem;
+}
+
+::placeholder {
+    font-family: inherit;
+    font-size: 1rem;
+    text-align: center;
+}

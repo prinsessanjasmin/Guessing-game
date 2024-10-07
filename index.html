@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://kit.fontawesome.com/584828937d.js" crossorigin="anonymous"></script>
+    <title>Guessing game</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div>
+                    <i class="fa-solid fa-question" id="questionmark"></i>
+                </div>
+                <!-- <ul>
+                    <li>
+                        <div>
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </li>
+                </ul> -->
+            </nav>       
+        </header>
+        <main>
+            <div class="container">
+                <h1>Guess the number</h1>
+                <p class="teaser">Welcome to the guessing game!</p>
+            </div>
+            <div class="container game">
+                <h2>Please guess a number between 1 and 100!</h2>
+                <div class="input-box">
+                    <input type="number" class="guess-box" placeholder="1-100">
+                    <button class="btn">Guess!</button>
+                </div>
+                <div>
+                    <p class="feedback"></p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <p>Copyright: Jasmin de Freitas (2024)</p>
+            </div>
+        </footer>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
