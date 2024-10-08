@@ -9,7 +9,8 @@
 }
 
 :root {
-    --clr-background: hsl(165, 19%, 41%); 
+    --clr-background: hsl(165, 19%, 50%); 
+    --clr-bg-dark: hsl(165, 19%, 41%); 
     --clr-text: hsl(124, 71%, 96%);
     --clr-accent: #a1f7c5;
 }
@@ -68,9 +69,12 @@ body {
 
 #questionmark {
     border: 2px solid rgb(0, 0, 0);
-    padding: 1rem;
+    display: grid;
+    place-items: center;
+    padding: .5rem;
     border-radius: 50%;
-    aspect-ratio: 1/1;
+    height: 3rem; 
+    aspect-ratio: 1;
     background-color: var(--clr-accent);
     color: var(--clr-background);
     font-size: 2rem;
@@ -96,10 +100,13 @@ body {
 .guess-box {
     padding: .5rem;
     height: 2.5rem;
-    width: 25%;
+    width: 30%;
     border-radius: .5rem;
     border: none;
     box-shadow: 1px;
+    text-align: center;
+    font-family:  "Open Sans", sans-serif;
+    font-size: inherit;
 }
 
 .btn {
@@ -112,10 +119,21 @@ body {
     border-radius: .5rem;
     border: none;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 ::placeholder {
     font-family: inherit;
     font-size: 1rem;
     text-align: center;
+}
+
+.feedback-div {
+    height: auto; 
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--clr-bg-dark);
+    border: none;
+    border-radius: .5rem;
+    text-align: left;
 }
